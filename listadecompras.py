@@ -11,7 +11,9 @@ if opcao2=="sim":
         lista.append(listat)
         opcao2=input("digite não para parar ou sim para continuar: ")
 print(lista)
-opcao3=input("deseja remover um item da lista acima")
+opcao3=input("deseja remover um item da lista acima? ")
 if opcao3=="sim":
-    lista.remove(input("digite o nome do item que quer remover"))
+    while opcao3=="sim":
+        lista.remove(input("digite o nome do item que quer remover: "))
+        opcao3=input("digite não para parar ou sim para continuar: ")
 print(f"essa é sua lista final {lista}")
