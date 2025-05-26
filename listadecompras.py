@@ -1,5 +1,5 @@
 lista=[]
-opcao="sim"
+opcao=input("deseja adicionar algun item na lista? ")
 while opcao=="sim":
     listat=input("digite um item: ")
     lista.append(listat)
@@ -16,4 +16,7 @@ if opcao3=="sim":
     while opcao3=="sim":
         lista.remove(input("digite o nome do item que quer remover: "))
         opcao3=input("digite não para parar ou sim para continuar: ")
-print(f"essa é sua lista final {lista}")
+if len(lista)>0:
+    print(f"essa é sua lista final {lista}")
+else:
+    print("sua lista ficou vazia")
