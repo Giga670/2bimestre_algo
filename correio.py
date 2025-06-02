@@ -21,6 +21,7 @@ def retorno(valor):
             print(pacotes[i][1])
 cod = input("insira o código: ")
 retorno(cod)
-
+ordenada=sorted(pacotes)
+print(ordenada)
 
     
